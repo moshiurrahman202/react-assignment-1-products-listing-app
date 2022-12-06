@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-const Product = () => {
+const Product = (props) => {
+  const { product } = props;
+
+  
+  const {title, price, rating, description, image } = product;
   return (
       <article className="product">
       <img src="" alt="" />
